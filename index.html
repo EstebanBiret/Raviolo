@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo en raviolo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" />
+
+</head>
+<audio controls autoplay id="audio">
+    <source src="sound.mp3" type="audio/mp3">
+</audio>
+<script>
+    var audio = document.getElementById("audio");
+    audio.volume = 0.4;
+</script>
+<body>
+    <a href="https://fr.wiktionary.org/wiki/raviolo" target="_blank"><img class="backrooms" src="raviolo.png"></a>
+    <!--<script>rotateAnimation("backrooms", 20);</script>-->
+
+    
+    <!--<script>
+        document.getElementById('audio').play();
+    </script>-->
+
+    <div class="app-card">
+        <div class="app-card-top">
+            <form action="">
+                <input type="text" data-location autocomplete="off" value="Gaillac">
+            </form>
+            <div data-date>Samedi, 22:30</div>
+            <div data-temperature>
+                <span>30</span><sup>°c</sup>
+            </div>
+            <img src="" width ="100" data-image>
+            <div data-temperature-text>Ensoleillé</div>
+        </div>
+        <div>Prévisions des 2 prochains jours :</div>
+        <div class="app-card-bottom"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
